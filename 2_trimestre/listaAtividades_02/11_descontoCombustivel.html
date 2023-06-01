@@ -14,10 +14,33 @@
     */
 
     //ENTRADA
-
+    const litros = Number(prompt(`Informe os litros vendidos`).trim().replace(",","."));
+    const combustivel = prompt(`Qual tipo de combustível(Responda com A ou G)`).trim().toLowerCase();
 
     //PROCESSAMENTO
-
+    if (combustivel == "a") {
+        if (litros > 20) {
+            const total = (litros * 6.1) * 0.95;
+            alert(`O valor pago será ${total.toFixed(2).replace(".",",")}`)
+        }
+        else {
+            const total = (litros * 6.1) * 0.97;
+            alert(`O valor pago será ${total.toFixed(2).replace(".",",")}`)
+        }
+    }
+    else if (combustivel == "g") {
+        if (litros > 20) {
+            const total = (litros * 6.5) * 0.94;
+            alert(`O valor pago será ${total.toFixed(2).replace(".",",")}`)
+        }
+        else {
+            const total = (litros * 6.5) * 0.96;
+            alert(`O valor pago será ${total.toFixed(2).replace(".",",")}`)
+        }
+    }
+    else {
+        alert(`Valor inválido`)
+    }
     
     //SAÍDA
 

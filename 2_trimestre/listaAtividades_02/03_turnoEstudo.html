@@ -12,9 +12,21 @@
     */
 
     //ENTRADA
-
+    const periodo = prompt(`Informe o período em que você estuda responda com: M=matutino, V=vespertino e N=noturno.`).trim().toLowerCase();
     
     //PROCESSAMENTO
+    if (periodo == "m") {
+        alert(`Bom dia!`);
+    }
+    else if (periodo == "v") {
+        alert(`Boa tarde!`);
+    }
+    else if (periodo == "n") {
+        alert(`Boa noite!`)
+    }
+    else {
+        alert(`inválido`)
+    }
 
     
     //SAÍDA

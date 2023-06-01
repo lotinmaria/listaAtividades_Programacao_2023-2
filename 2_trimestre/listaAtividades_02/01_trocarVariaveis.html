@@ -6,10 +6,16 @@
     */
 
     //ENTRADA
+    let inteiro1 = Number(prompt(`informe um número inteiro`).trim());
+    let inteiro2 = Number(prompt(`informe um número inteiro`).trim());
 
     //PROCESSAMENTO
-
-    //SAÍDA
-
+    const salve = inteiro1
+    inteiro1 = inteiro2
+    inteiro2 = salve
     
+    //SAÍDA
+    alert(`o primeiro valor que era ${inteiro2} será ${inteiro1} e o segundo valor que era ${inteiro1} será ${inteiro2}`)
+
+
 </script>

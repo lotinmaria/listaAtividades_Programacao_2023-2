@@ -5,10 +5,40 @@
     */
 
     //ENTRADA
+    const numero1 = Number(prompt(`Informe um número`).trim().replace(",", "."));
+    const numero2 = Number(prompt(`Informe um número`).trim().replace(",", "."));
+    const numero3 = Number(prompt(`Informe um número`).trim().replace(",", "."));
 
-    
+
     //PROCESSAMENTO
-    
+    if (numero1 > numero2 && numero1 > numero3) {
+        if (numero2 > numero3) {
+            alert(`Em ordem decrescente será ${numero1}, ${numero2}, ${numero3}`);
+        }
+        else {
+            alert(`Em ordem decrescente será ${numero1}, ${numero3}, ${numero2}`)
+        }
+    }
+    else if (numero2 > numero1 && numero2 > numero3) {
+        if (numero1 > numero3) {
+            alert(`Em ordem decrescente será ${numero2}, ${numero1}, ${numero3}`)
+        }
+        else {
+            alert(`Em ordem decrescente será ${numero2}, ${numero3}, ${numero1}`)
+        }
+    }
+    else if (numero3 > numero1 && numero3 > numero2) {
+        if (numero1 > numero2) {
+            alert(`Em ordem decrescente será ${numero3}, ${numero1}, ${numero2}`)
+        }
+        else {
+            alert(`Em ordem decrescente será ${numero3}, ${numero2}, ${numero1}`)
+        }
+    }
+    else {
+        alert(`Valores inválidos`)
+    }
+
     //SAÍDA
-    
+
 </script>

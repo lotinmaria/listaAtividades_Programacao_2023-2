@@ -6,11 +6,49 @@
     */
 
     //ENTRADA
-
+    const hemisferio = prompt(`informe em qual hemisfério você está localizado. (Responda com S para sul e N para norte)`).trim().toLowerCase();
+    const mes = Number(prompt(`informe o mês atual. (Responda com número como janeiro = 1)`).trim());
 
     //PROCESSAMENTO
+    if (hemisferio == "s") {
+        if (mes > 3 && mes <= 6) {
+            alert(`Outono`)
+        }
+        else if (mes > 6 && mes <= 9) {
+            alert(`Inverno`)
+        }
+        else if (mes > 9 && mes <= 12) {
+            alert(`Primavera`)
+        }
+        else if (mes > 0 && mes <= 3) {
+            alert(`Verão`)
+        }
+        else {
+            alert(`Mês inválido`)
+        }
+    }
+    else if (hemisferio == "n") {
+        if (mes > 3 && mes <= 6) {
+            alert(`Primavera`)
+        }
+        else if (mes > 6 && mes <= 9) {
+            alert(`Verão`)
+        }
+        else if (mes > 9 && mes <= 12) {
+            alert(`Outono`)
+        }
+        else if (mes > 0 && mes <= 3) {
+            alert(`Inverno`)
+        }
+        else {
+            alert(`Mês inválido`)
+        }
+    }
+    else {
+        alert(`Hemisfério inválido`)
+    }
 
-    
+
     //SAÍDA
 
 

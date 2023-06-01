@@ -9,10 +9,27 @@
     // Entre 5.9 e zero            E
 
     // Entrada
-
+    let nota = Number(prompt(`Informe a sua nota`).trim().replace(",","."));
     
     // Processamento
-
+    if (nota <= 10 && nota >= 9) {
+        alert(`Você tirou um A`)
+    }
+    else if (nota < 9 && nota >= 8) {
+        alert(`Você tirou um B`)
+    }
+    else if (7.9 >= nota && nota >= 7) {
+        alert(`Você tirou um C`)
+    }
+    else if (nota < 7 && nota >= 6) {
+        alert(`Você tirou um D`)
+    }
+    else if (nota < 6 && nota > 0) {
+        alert(`Você tirou um E`)
+    }
+    else {
+        alert(`Valor inválido`)
+    }
     
     // Saída
 

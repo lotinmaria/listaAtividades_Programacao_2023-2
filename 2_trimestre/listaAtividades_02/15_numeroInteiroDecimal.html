@@ -6,10 +6,20 @@
     */
 
     //ENTRADA
+    const num = Number(prompt(`informe um número`).trim().replace(",","."))
 
 
     //PROCESSAMENTO
-
+    if (Number.isInteger(num)) {
+        alert(`Número inteiro`)
+     }
+     else if (!Number.isInteger(num)) {
+        alert(`Número decimal`)
+     }
+     else {
+        alert(`inválido`)
+     }
+    
     
     //SAÍDA
 
